@@ -113,29 +113,37 @@
 
             /* grid-row: 1 / span 3; */
         }
+
         .item-2 {
             background-color: blueviolet;
             /* width: 700px; */
             /* z-index: 1; */
         }
+
         .item-3 {
             background-color: yellow;
         }
+
         .item-4 {
             background-color: palegreen;
         }
+
         .item-5 {
             background-color: firebrick;
         }
+
         .item-6 {
             background-color: orange;
         }
+
         .item-7 {
             background-color: lightcoral;
         }
+
         .item-8 {
             background-color: sandybrown;
         }
+
         .item-9 {
             background-color: violet;
         }
@@ -407,6 +415,7 @@
 🟪 fr unit 🟪
 → The fr unit helps create flexible grid tracks. It represents a fraction of the available space in the grid container.
 → The fr is calculated based on the remaining space when combined with other length values.
+→ This unit is super clever and flexible as it divides available space into fractions, so 1fr 1fr 1fr 1fr results in four equally sized columns.
 
         .container {
             grid-template-columns: 3rem 25% 1fr 2fr;
