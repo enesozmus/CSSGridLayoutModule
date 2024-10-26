@@ -1,0 +1,727 @@
+<!DOCTYPE html 18:18>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid System</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        * {
+            vertical-align: baseline;
+            font: inherit;
+            text-decoration: none;
+            border: 0 none;
+            outline: 0;
+            padding: 0;
+            margin: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+            scroll-behavior: smooth;
+            height: 100%;
+        }
+
+        html,
+        body {
+            min-height: 100%;
+        }
+
+        body {
+            font-family: sans-serif;
+            font-size: 1.7rem;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeSpeed;
+        }
+
+        .container {
+            display: grid;
+
+            /* grid-template-columns: 100px; */
+            /* grid-template-columns: 100px 100px; */
+
+            /* grid-template-columns: 1fr;
+            grid-template-columns: auto;
+            grid-template-columns: 100%; */
+
+            /* grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: auto auto auto;
+            grid-template-columns: repeat(3, auto); */
+
+            /* grid-template-columns: 300px repeat(3, 1fr) 300px; */
+
+            /* grid-template-columns: 1fr 2fr 1fr;
+            grid-template-columns: 25% 50% 25%; */
+
+            /* grid-template-columns: 3rem 25% 1fr 2fr; */
+
+            /* grid-template-rows: 1fr; */
+            /* grid-template-rows: 1fr 1fr; */
+            /* grid-template-rows: 1fr 1fr 8fr; */
+            /* grid-template-rows: 50px 100px; */
+            /* grid-template-rows: 100px 100px 100px 100px 100px; */
+
+            /* grid-template-rows: minmax(400px, auto); */
+            /* grid-template-columns: minmax(400px, 600px); */
+
+            /* grid-template-columns: minmax(auto, 50%); */
+            /* grid-template-columns: minmax(auto, 400px); */
+            /* grid-template-columns: minmax(400px, 600px) minmax(400px, 600px); */
+            /* grid-template-columns: 120px minmax(150px, auto) 120px; */
+
+            /* grid-template-rows: minmax(400px, auto) minmax(400px, auto); */
+
+            /* grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+            grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line]; */
+
+            /* grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 70px;
+            grid-auto-rows: 140px;
+            grid-auto-flow: column; */
+
+            /* 
+                🟡🟡🧧 Belki de CSS grid'inin en büyük numarası, satır veya sütun sayısını açıkça belirtmeyen, ancak bunları biraz gevşek talimatlara ve sağladığınız içeriğe göre otomatik olarak oluşturan bir sütun düzeni yazabilmektir.
+            */
+            /* display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem; */
+            /* .item {remove width} */
+
+            /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+        }
+
+        .item {
+            /* height: 300px; */
+            /* width: 300px; */
+        }
+
+        .item-1 {
+            background-color: tomato;
+            /* z-index: 1; */
+
+            /* grid-column: span 2; */
+            /* grid-column: 1 / span 2; */
+            /* grid-column: 3 / span 2; */
+
+            /* grid-row: 1 / span 3; */
+        }
+        .item-2 {
+            background-color: blueviolet;
+            /* width: 700px; */
+            /* z-index: 1; */
+        }
+        .item-3 {
+            background-color: yellow;
+        }
+        .item-4 {
+            background-color: palegreen;
+        }
+        .item-5 {
+            background-color: firebrick;
+        }
+        .item-6 {
+            background-color: orange;
+        }
+        .item-7 {
+            background-color: lightcoral;
+        }
+        .item-8 {
+            background-color: sandybrown;
+        }
+        .item-9 {
+            background-color: violet;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--GRID CONTAINER-->
+    <div class="container">
+        <!--GRID ITEMS .item{Grid Item $}*9 -->
+        <div class="item item-1">Grid Item 1</div>
+        <div class="item item-2">Grid Item 2</div>
+        <div class="item item-3">Grid Item 3</div>
+        <div class="item item-4">Grid Item 4</div>
+        <div class="item item-5">Grid Item 5</div>
+        <div class="item item-6">Grid Item 6</div>
+        <div class="item item-7">Grid Item 7</div>
+        <div class="item item-8">Grid Item 8</div>
+        <div class="item item-9">Grid Item 9</div>
+    </div>
+
+    <!-- <div class="container">
+        <div class="item item-1">Grid Item 1</div>
+        <div class="item item-2">Grid Item 2</div>
+        <div class="item item-3">Grid Item 3</div>
+    </div>
+    <div class="container">
+        <div class="item item-1">Grid Item 1</div>
+        <div class="item item-2">Grid Item 2</div>
+        <div class="item item-3">Grid Item 3</div>
+        <div class="item item-4">Grid Item 4</div>
+        <div class="item item-5">Grid Item 5</div>
+    </div> -->
+
+</body>
+
+</html>
+
+
+<!-- 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥 -->
+<!-- 🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥 -->
+<!-- 🟥🟥🟥🟥🟥 NOTES 🟥🟥🟥🟥🟥🟥 -->
+
+
+<!-- 🟥🟥🟥  -->
+<!--
+🟥🟥
+🟥🟥🟥 CSS GRID 2017 🟥🟥🟥
+
+🟢 CSS Grid is a powerful tool that allows for two-dimensional layouts to be created on the web.
+
+    🟦 CSS Grid, web siteleri yapmaya başladığımızdan beri hepimizin uğraştığı düzen sorunlarını çözmek için özel olarak oluşturulmuş ilk CSS modülüdür.
+
+    🟦 Grid, bir sayfayı bir “ızgara” veya “grid” olarak düşünmenize olanak tanır ve bu ızgaranın içindeki hücrelere öğeleri yerleştirmenizi sağlar. Bu ızgara, iki temel bileşenden oluşur: satırlar (rows) ve sütunlar (columns).
+    
+    🟦 Satırlar, sayfanızın dikey yönde bölünmüş parçalarını temsil ederken, sütunlar sayfanızın yatay olarak bölünmüş parçalarını temsil eder. Bu satır ve sütunlar arasındaki kesişim noktaları hücreleri oluşturur ve bu hücreler, öğelerinizi yerleştirmek için kullanılır.
+
+    🟦 Başlamak için bir container element'ini 'display: grid;' veya 'display: inline-grid;' ile nitelendirerek bir grid bağlamı tanımlamalı, grid-template-columns ve grid-template-rows ile sütun ve satır boyutlarını ayarlamalı ve ardından alt öğelerini grid-column ve grid-row ile ilgili bağlama yerleştirmelisiniz.
+-->
+
+
+<!-- 🟥🟥🟥  -->
+<!--
+🟥🟥
+🟥🟥 Grid Container 🟥🟥🟥
+🟢 When working with grids in CSS we will have a concept called 'grid container'. This concept refers to the parent element that wraps the items inside this element is responsible for creating a grid model with columns and rows.
+
+
+    🟦 🟦 It’s the direct parent of all the grid items.
+    🟦 The element on which 'display: grid;' or 'display: inline-grid;' is applied.
+
+
+🟥
+🟥🟥 display: grid; or display: inline-grid; 🟥
+🟢 Defines the element as a "grid container" and establishes "a new grid formatting context" for its contents.
+
+
+    → Here I create a container class that takes on this role.
+
+        <div class="container">.....</div>
+
+    → On the CSS side,  I declare 'display: grid;' or 'display: inline-grid;' to create a grid context and manage the number of rows and columns.
+
+        .container {
+            display: grid | inline-grid;
+        }
+
+
+    ⭕️ In this example 'container' is the grid container.
+
+        .container {
+            display: grid;
+        }
+
+        ❗️ Mevcut kodda kareler sadece 300*300'lük bir alanı kaplıyor gözükse de grid container bir div gibi bir block element gibi çalışarak satır bazında bütün satırı kaplar.
+        .item {
+            height: 300px;
+            width: 300px;
+        }
+
+        .item-1 {
+            background-color: red;
+        }
+
+        .item-2 {
+            background-color: blue;
+        }
+
+        .item-3 {
+            background-color: yellow;
+        }
+
+        <div class="container">
+            <div class="item item-1"> </div>
+            <div class="item item-2"> </div>
+            <div class="item item-3"> </div>
+        </div>
+
+🟥
+🟥🟥 grid or inline-grid 🟥
+
+    🟧 display: grid;
+        → Grid items are placed in rows by default and span the full width of the grid container.
+
+            .container {
+                display: grid;
+            }
+
+    🟧 display: inline-grid;
+        → Grid items are placed in rows by default and do not span the full width of the grid container.
+        → The difference between the values inline-grid and grid is that the inline-grid will make the element inline while grid will make it a block-level element.
+
+            .container {
+                display: inline-grid;
+            }
+-->
+
+
+<!-- 🟥🟥🟥  -->
+<!--
+🟥🟥
+🟥🟥 Explicit Grid 🟥🟥🟥
+🟢 Explicitly set a grid by creating 'columns' and 'rows' with the 'grid-template-columns' and 'grid-template-rows' properties.
+
+
+🟧 grid-template-columns
+    → A column track is created for each value specified for grid-template-columns.
+    → The grid-template-columns property specifies the number (and the widths) of columns in a grid layout.
+    📘 grid-template-columns işlenip, row tarafıyla ilgili herhangi bir aksiyon alınmadığında satır sayısı gridItem sayısına göre hareket eder.
+
+        .container {
+            display: grid;
+
+                ❗️ Default grid yapısını bozmaz, değiştirmez.
+                ❗️ Her bir gridItem için bir ilgili satırı tamamen kaplar ve gridItem kadar satır oluşturur.
+            grid-template-columns: 1fr;
+            grid-template-columns: 100%;
+
+                ❗️ Default grid yapısında değişikliğe yol açar.
+                ❗️ 100px genişliğinde tek bir sütun ve gridItem kadar row oluşturarak item'ları alt alta alır.
+                ❗️ Dizilim kabaca
+                                a
+                                a
+                                a
+                                a şeklinde olur.
+            grid-template-columns: 100px;
+
+                ❗️ Default grid yapısında değişikliğe yol açar.
+                ❗️ 100px genişliğinde iki ayrı sütun ve gridItem/2 veya (gridItem/2) - 1  kadar row oluşturarak gridItem'ları alt alta alır.
+                ❗️ Dizilim kabaca
+                                a a
+                                a a
+                                a a
+                                a a 
+                                a   şeklinde olur.
+            grid-template-columns: 100px;
+
+                ❗️ Default grid yapısında değişikliğe yol açar.
+                ❗️ Birbirine eşit genişlikte üç ayrı kolon oluşturur.
+                ❗️ Dizilim kabaca
+                                a a a
+                                a a a
+                                a a a
+                                a a a şeklinde olur.
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: auto auto auto;
+            grid-template-columns: repeat(3, auto);
+
+
+                ❗️ Default grid yapısında değişikliğe yol açar.
+                ❗️ Görüleceği üzere birbirine eşit olmayan genişlikleri oransal olarak atanan üç ayrı kolon oluşturur.
+                ❗️ Dizilim kabaca
+                                a aa a
+                                a aa a
+                                a aa a
+                                a aa a şeklinde olur.
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-columns: 25% 50% 25%;
+
+                ❗️ Görüleceği üzere birbirine eşit olmayan genişlikleri özellikle belirlenmiş üç ayrı kolon oluşturur.
+            grid-template-columns: 90px 50px 120px;
+            
+
+            grid-template-columns: 3rem 25% 1fr 2fr;
+        }
+
+🟧 grid-template-rows
+    → A row track is created for each value specified for grid-template-rows. 
+    → The grid-template-rows property specifies the number (and the heights) of the rows in a grid layout.
+    🧩 You probably don't need to declare rows.
+
+        .container {
+            display: grid;
+
+                ❗️ Default grid yapısını bozmaz, değiştirmez.
+                ❗️ Sadece ilk row'a grid container özelinde bir alan tanımlaması yaptınız.
+                ❗️ Sadece ilk row'a, o row'a oturan gridItem'ın kapladığı yükseklik kadar gridContainer'da alan tanımış oldunuz.
+                ❗️ Bu default olarak zaten yapılmıştı.
+                ❗️ Yani aslında pek de anlamlı ve yararlı bir şey yapmadınız.
+            grid-template-rows: 1fr;
+
+                ❗️ Default grid yapısını bozmaz, değiştirmez.
+                ❗️ Hem birinci row'a hem de ikinci row'a ilgili gridItem'ların kapladığı yükseklik kadar gridContainer özelinde bir alan atadınız.
+                ❗️ Bu da default olarak zaten yapılmıştı. Diğer bütün satırlar için de default olarak zaten bu geçerli.
+                ❗️ Yani aslında yine pek de anlamlı ve yararlı bir şey yapmadınız.
+            grid-template-rows: 1fr 1fr;
+
+                ❗️ Default grid yapısında değişikliğe yol açar.
+                ❗️ Öncelikle gridItem'larınızız kaç satır/row oluşturduğundan bağımsız sadece ilk iki row'un yüksekliğine müdahale ettiğinizi hatırlayınız.
+                ❗️ 30 satırınız varsa da 1960 satırınız varsa da şu an sadece ilk iki row'un yüksekliğine müdahale ediyorsunuz.
+                📘 Diğer gridItem'larınızın yüksekliği her birinin kendi içeriğine göre default olarak atanmaya devam eder.
+                ❗️ Birinci row'daki gridItem için gridContainer özelinde 50px'lik bir yükseklik alanı, ikinci row'daki gridItem için ise 100px'lik bir alan tanıdınız.
+                ❗️ İlgili gridItem'larınızın yüksekliği tanıdınığın alandan büyükse ilgili item'ların bir artık gözükmez üste üste binme durumu olur.
+            grid-template-rows: 50px 100px;
+
+
+                ❗️ Default grid yapısında değişikliğe yol açar.
+                ❗️ Unutmayın yine sadece ve sadece ilk üç row için bir müdahalede bulundunuz. Yaptığınız işlemi anlamaya çalışırken asla ve asla diğer row'ları hesaba katmayın.
+                ❗️ İlk üç row için toplam olanı 10 birim olarak belirlediniz ve 1 1 8 olarak bölüştürdünüz.
+                ❗️ Üçüncü row'a oturacak gridItem'ın kendi yüksekliği ilgili 8 birimden daha az olabilir bu durumda kalan kısımlar için (8br - gridItem'ın kendi yüksekliği) bir boşluk bir beyaz ekranla karşılaşabilirsiniz.
+
+                ❗️ Dizilim kabaca
+                                1
+                                1
+                                8
+                                8
+                                8
+                                8
+                                8
+                                8
+                                8
+                                8       → bu kısımdan aşağısının yaptığınız işlemle bir ilgisi yoktur
+                                a
+                                a
+                                a ... şeklinde olur
+            grid-template-rows: 1fr 1fr 8fr;
+
+
+                ❗️ Default grid yapısında değişikliğe yol açar.
+                ❗️ İlk 5 row için bir müdahaleyi tanımlar.
+            grid-template-rows: 100px 100px 100px 100px 100px;
+
+            
+            grid-auto-rows: 2fr; → kalan bütün satırlar
+        }
+
+🟪
+🟪 fr unit 🟪
+→ The fr unit helps create flexible grid tracks. It represents a fraction of the available space in the grid container.
+→ The fr is calculated based on the remaining space when combined with other length values.
+
+        .container {
+            grid-template-columns: 3rem 25% 1fr 2fr;
+            1fr = ( (width of grid) - (3rem) - (25% of width of grid) ) / 3 )
+        } 
+-->
+
+
+<!-- 🟥🟥🟥  -->
+<!--
+🟥🟥
+🟥🟥 Minimum and Maximum Grid Track Sizes 🟥🟥🟥
+🟢 Tracks sizes can be defined to have a minimum and/or maximum size with the minmax() function.
+
+→ minmax(min, max)
+→ The minmax() function accepts 2 arguments: the first is the minimum size of the track and the second the maximum size.
+
+        .container {
+            display: grid;
+
+                ❗️ Yine garip bir şekilde sadece ama sadece ilk row etkilenir. :D
+                ❗️ Bu işlemle ilk row için tanımlanan grid yükseklik alanı minimum 400px ve eğer gerekirse daha fazlasının mümkün olduğudur.
+                ❗️ İlgili row'a oturacak gridItem'ınız yükseklik olarak 400px'den daha küçükse bir boşluk bir beyaz ekranla karşılaşabilirsiniz.
+            grid-template-rows: minmax(400px, auto);
+
+                ❗️ Aynı işlemin ilk ve ikinci row'a uygulanmasıdır. Diğer row'lar etkilenmezler.
+            grid-template-rows: minmax(400px, auto) minmax(400px, auto);
+
+
+                ❗️ Tek bir sütun/column oluşturur ve sütun genişliğini en az 400, içerik 400'den büyükse 600 olarak belirler.
+                ❗️ İçerik 600'den de büyükse taşma/overflow yapar.
+                ❗️   a
+                    a
+                    a
+                    a
+                    ..
+            grid-template-columns: minmax(400px, 600px);
+
+                ❗️ Aynı işlemi iki sütun/column oluştururak yapar.
+                ❗️   a a
+                    a a
+                    a a
+                    a a
+                    .. ..
+            grid-template-columns: minmax(400px, 600px) minmax(400px, 600px);
+
+
+                ❗️ Üç sütun/column oluşturur.
+                ❗️ İlgili gridContainer'ın yarısı birinci sütuna tanımlanır.
+                ❗️ Söz konusu tanımlanan alan arka plandaki grid bağlamına aittir. Item'ların width-height değerlerinden söz etmediğimizi hatırlayınız.
+            grid-template-columns: minmax(auto, 50%) 1fr 3em;
+
+                ❗️ Üç sütun/column oluşturur.
+                ❗️ İlk ve son sütuna sabit 120px'lik genişlik tanımla.
+                ❗️ Ortadaki sütuna ilk ve son sütundan kalan boşluğun tamamını kullanabilecek şekilde 150'den küçük olmayacak şekilde tanımla.
+                ❗️ overflow durumları oluşabilir
+            grid-template-columns: 120px minmax(150px, auto) 120px;
+
+        }
+-->
+
+
+<!-- 🟥🟥🟥  -->
+<!--
+🟥🟥
+🟥🟥 Repeating Grid Tracks 🟥🟥🟥
+🟢 Define repeating grid tracks using the repeat() notation.
+→ This is useful for grids with items with equal sizes or many items.
+
+🟧 repeat()
+→ The repeat() notation accepts 2 arguments: the first represents the number of times the defined tracks should repeat, and the second is the track definition.
+
+        .container {
+            display: grid;
+
+                ❗️ 100px genişliğinde üç sütun
+            grid-template-columns: 100px 100px 100px;
+            grid-template-columns: repeat(3, 100px);
+
+                ❗️ Taşma, overflow durumları görülebilir.
+            grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: repeat(8, 1fr);
+
+            grid-template-columns: repeat(8, minmax(10px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+ 
+            grid-template-rows:    repeat(4, 100px);
+            grid-template-columns: 30px repeat(3, 1fr) 30px;
+            grid-template-columns: repeat(3, 20px [col-start]);
+        }
+-->
+
+
+<!-- 🟥🟥🟥  -->
+<!-- 
+🟥🟥
+🟥🟥 Grid Gaps and Layering Grid Items 🟥🟥🟥
+🟢 The grid-column-gap and grid-row-gap properties create gutters between columns and rows.
+→ Grid gaps are only created in between columns and rows, and not along the edge of the grid container 🙌.
+
+        .container {
+            display grid;
+
+            grid-row-gap: 20px;
+            grid-column-gap: 2rem;
+
+            [grid-row-gap] [grid-column-gap]
+            grid-gap: 20px 5rem;
+            grid-gap: 2rem;
+
+            gap: <grid-row-gap> <grid-column-gap>;
+            gap: 2rem;
+        }
+
+🟥🟥
+🟥🟥 Layering Grid Items 🟥🟥🟥
+🟢 Grid items can be layered/stacked by properly positioning them and assigning 'z-index' when necessary.
+
+        .item-1 { 
+            z-index: 1; 
+        }
+ -->
+
+
+<!-- 🟥🟥🟥  -->
+<!--
+🟥🟥
+🟥🟥 Positioning Items by Grid Line Numbers 🟥🟥🟥
+🟢 Grid lines are essentially lines that represent the start of, the end of, or between column and row tracks.
+→ Each line, starting from the start of the track and in the direction of the grid, is numbered incrementally starting from 1.
+
+    → grid-column-start     → tanımlanacak alanın hangi sütun numarasından başlayacağı
+    → grid-column-start     → tanımlanacak alanın hangi sütun numarasıyla sonlanacağı
+
+    → grid-row-start        → tanımlanacak alanın hangi satır numarasından başlayacağı
+    → grid-end-start        → tanımlanacak alanın hangi satır numarasıyla sonlanacağı
+
+        .container {
+            display grid;
+
+            grid-row-start:    2;
+            grid-row-end:      3;
+            /* [grid-row-start] / [grid-row-end] */
+            grid-row 2 / 3:
+
+            grid-column-start: 2;
+            grid-column-end:   3;
+            /* [grid-column-start] / [grid-column-end] */
+            grid-column: 2 / 3;
+
+            /* [grid-row-start] / [grid-column-start] / [grid-row-end] / [grid-column-end] */
+            grid-area: 2 / 2 / 3 / 3;
+        }
+-->
+
+
+<!-- 🟥🟥🟥  -->
+<!--
+🟥🟥
+🟥🟥 Spanning Items Across Rows and Columns 🟥🟥🟥
+🟢 Grid items span only one column and row track by default, but can span multiple row and/or column tracks using the same properties to position them.
+→ Set a grid item to span more than one column track by setting grid-column-end to a column line number that is more than one column away from grid-column-start.
+
+        .item {
+            grid-column-start: 1;
+            grid-column-end:   4;
+            grid-column: 1 / 4;
+
+            grid-row-start: 1;
+            grid-row-end:   4;
+            grid-row:    1 / 4;
+        }
+
+🟧
+🟧 span 🟧
+🟢 The keyword span, followed by the # of columns or rows to span, can also be used.
+
+        .item {
+                ❗️ İlgili gridItem'ın bulunduğu sütunu ve bir yanındaki sütunu ilgili bağlamda alan olarak tanımla
+            grid-column: span 2;
+
+                ❗️ Birinci sütunu ve bir yanındaki sütunu ilgili bağlamda alan olarak tanımla
+            grid-column: 1 / span 2;
+
+                ❗️ Üçüncü sütunu ve bir yanındaki sütunu ilgili bağlamda alan olarak tanımla
+            grid-column: 3 / span 2;
+
+            grid-row: 2 / span 3;
+        }
+-->
+
+
+<!-- 🟥🟥🟥  -->
+<!--
+🟥🟥
+🟥🟥 Naming Grid Lines & Positioning Items by Line Names 🟥🟥🟥
+🟢 Grid lines can be named when defining the grid with the grid-template-rows and grid-template-columns properties.
+→ Line names can then be referenced to position grid items.
+🟢 Then, with named grid lines, items can be positioned by line names and numbers.
+
+        .container {
+            display: grid;
+
+            grid-template-rows:    [row-1-start] 1fr [row-2-start] 1fr [row-2-end];
+            grid-template-columns: [col-1-start] 1fr [col-2-start] 1fr [col-3-start] 1fr [col-3-end];
+
+            grid-template-rows:    [row-start row-1-start] 1fr [row-1-end row-2-start] 1fr [row-2-end row-end];
+        }
+
+        .item {
+            grid-row-start:    row-1-start;
+            grid-row-end:      row-end;
+            grid-column-start: col-2-start;
+            grid-column-end:   col-end;
+
+            grid-row:    row-2-start / row-end;
+            grid-column: col-2-start / col-end;
+
+                    🟢 Satır ve sütun adı atamaları da repeat() fonksiyonuna dahil edilebilir.
+                    ❗️ Bu, aynı adlara sahip birden fazla ızgara satırıyla sonuçlanır.
+                    ❗️ Aynı adı taşıyan satırlara ayrıca bir satırın konumu/adının oluşum numarası atanır, bu da aynı adı taşıyan başka bir satırdan benzersiz bir şekilde tanımlanmasını sağlar.
+                    ❗️ Aynı şekilde kullanılır.
+            grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+            grid-template-rows: repeat(3, [row-start] 1fr [row-end]);
+
+            grid-column: col-start / col-start 3;
+            grid-row:    row-start 2 / row-end 3;
+        }
+-->
+
+
+<!-- 🟥🟥🟥  -->
+<!--
+🟥🟥
+🟥🟥 Naming and Positioning Items by Grid Areas 🟥🟥🟥
+🟢 Like grid line names, grid areas can also be named with the grid-template-areas property.
+→ Names can then be referenced to position grid items.
+→ Sets of names should be surrounded in single or double quotes, and each name separated by a whitespace.
+→ Each set of names defines a row, and each name defines a column.
+
+
+🟧 grid-template-areas 🟧
+    → Defines a grid template by referencing the names of the grid areas which are specified with the 'grid-area' property.
+    → Repeating the name of a grid area causes the content to span those cells.
+    → A period signifies an empty cell.
+
+        .container {
+            display: grid;
+
+            grid-template-areas:    'header header header header'
+                                    'sidebar content content content'
+                                    'footer footer footer footer';
+
+            grid-template-columns: 1fr 1fr 1fr 200px;
+            grid-template-rows:    100px 1fr 300px;
+        }
+
+        header { grid-area: header; }
+        content { grid-area: content; }
+        sidebar { grid-area: sidebar; }
+        footer { grid-area: footer; }
+
+🟧 Implicitly Named Grid Lines → grid-row-start: header-start; grid-row-end: content-start;
+🟧 Implicitly Named Grid Areas → grid-area: inner
+-->
+
+
+<!-- 🟥🟥🟥  -->
+<!--
+🟥🟥
+🟥🟥 Implicit Grid 🟥🟥🟥
+🟢 An implicit grid is created when a grid needs to position items outside of the explicit grid because there isn’t enough space for items in the explicitly defined tracks or you decide to position something outside of the explicit grid.
+🟢 Those items are then auto-placed in the implicit grid.
+🟢 The implicit grid can be defined using the 'grid-auto-rows', 'grid-auto-columns', and 'grid-auto-flow' properties.
+
+
+🟧
+🟧 grid-auto-rows 🟧 grid-auto-columns 🟧🟧
+
+        .container {
+            display: grid;
+
+                ❗️ İki sütunlu bir grid container oluşturuldu.
+                ❗️ İlk row için bir yükseklik değeri atandı. Bu işlemin diğer row'ları ilgilendirmediğini hatırlayın.
+                ❗️ Kalan row'lar için 140px yükseklik değeri atandı.
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 70px;
+            grid-auto-rows: 140px;
+        }
+
+🟧
+🟧 grid-auto-flow 🟧🟧
+→ The default flow (direction) of a grid is 'row'.
+→ A grid’s flow can be changed to 'column'.
+
+        .container {
+            display: grid;
+                ❗️ Default.
+                ❗️ Öğeler, her satırı sırayla doldurarak ve gerektiğinde yeni satırlar ekleyerek yerleştirilir.
+            grid-auto-flow: row;
+                ❗️ Öğeler, her sütun sırayla doldurularak yerleştirilir ve gerektiğinde yeni sütunlar eklenir.
+            grid-auto-flow: column;
+                ❗️ Daha küçük gridItem'lar daha sonra gelirse, grid bağlamındaki daha erken boşlukları doldurmaya çalışır.
+                ❗️ Bu, daha büyük gridItem'ların bıraktığı boşlukları dolduracağından, öğelerin sırasız görünmesine neden olabilir.
+            grid-auto-flow: dense;
+            grid-auto-flow: row dense;
+            grid-auto-flow: column dense;
+        }
+-->
+
+<!-- 🟥🟥🟥  -->
+<!--
+🟪🟪 auto-fill
+→ Bir satıra mümkün olduğunca çok sayıda sütun sığdır, boş olsalar bile.
+🟪🟪 auto-fit
+→ Boşluğa ne kadar sütun varsa sığdır. Boş sütunlar yerine, alanı doldurmak için sütunları genişletmeyi tercih edin.
+-->
