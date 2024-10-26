@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 6</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    * {
+      vertical-align: baseline;
+      font: inherit;
+      text-decoration: none;
+      border: 0 none;
+      outline: 0;
+      padding: 0;
+      margin: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+      height: 100%;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body {
+      font-size: 1.7rem;
+      line-height: 1.5;
+    }
+
+    /* GRID CONTAINER */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 8rem 1fr 15rem;
+      grid-template-areas:
+        'header  header  header  header  header'
+        'sidebar content content content content'
+        'footer  footer  footer  footer  footer';
+      gap: 1rem;
+    }
+
+    .grid-item {
+      font-size: 150%;
+      color: #fff;
+      background-color: #444;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .header,
+    .footer {
+      color: #000;
+      background-color: #999;
+    }
+
+    /* just naming */
+    .sidebar {
+      grid-area: sidebar;
+    }
+
+    .content {
+      grid-area: content;
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--GRID CONTAINER-->
+  <div class="grid-container">
+    <!--GRID ITEM 1-->
+    <div class="grid-item header">Header</div>
+    <!--GRID ITEM 2-->
+    <div class="grid-item sidebar">Sidebar</div>
+    <!--GRID ITEM 3-->
+    <div class="grid-item content">Content
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis ullam labore iusto, voluptas animi blanditiis
+        molestiae dolorum rerum eum esse repellat laboriosam laborum, ad qui. Similique exercitationem excepturi non
+        consequuntur pariatur rem, vitae aut amet libero quae accusantium odio omnis repellendus velit saepe id,
+        molestiae
+        itaque ex dolor nisi. Nesciunt suscipit, accusamus minima dignissimos omnis deserunt optio necessitatibus nulla,
+        quidem in cum culpa repellat ducimus adipisci voluptatibus libero placeat a vel enim? Repudiandae autem possimus
+        ab, enim omnis, iusto rem sunt aut rerum ducimus commodi illo nemo eos unde facilis necessitatibus nihil non
+        laborum. Asperiores est deleniti, ipsam debitis possimus, voluptatibus minus ea perferendis eveniet earum iste
+        at
+        assumenda! Corrupti nesciunt distinctio dolores consequatur beatae doloribus, soluta facere quo suscipit
+        repellendus? Tempore dolores eum dolore corrupti ab perferendis ratione dolor nobis consectetur porro similique
+        nisi, nesciunt quo fugit tempora quibusdam modi earum alias nemo ipsam itaque cumque aperiam veritatis minima!
+        Fugiat nihil et inventore aliquid iure minus quo animi accusantium libero ex mollitia alias ducimus maiores,
+        quia
+        enim nobis esse neque officiis assumenda sapiente ratione magnam? Sit molestiae facere id at maxime
+        consequuntur!
+        Explicabo asperiores ratione velit atque totam tempore alias error, porro eos repellendus, deleniti accusamus
+        iure
+        minima! Facere cupiditate similique dolorum at tempora enim ab pariatur hic temporibus veniam eos sint ipsam,
+        iste
+        dignissimos quis facilis repellendus. Ex, fugiat reiciendis? Optio blanditiis molestiae accusantium delectus
+        tenetur fugit molestias ratione, totam eligendi, ducimus est assumenda perspiciatis aperiam ex minima numquam,
+        ea
+        magni. Aspernatur suscipit dolor neque sapiente, placeat similique dolores quas vel. Beatae soluta nostrum nisi
+        ullam ipsam saepe tenetur. Reiciendis cumque ab sit voluptatem autem at facilis, molestiae, voluptate expedita
+        dolorem omnis optio ad corporis ex. Tenetur quasi rem amet magni perspiciatis harum maiores sunt ullam, quos
+        ipsum
+        explicabo delectus iusto odio repellendus maxime ea eum ad blanditiis.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, aliquam cupiditate sapiente earum fugiat,
+        consectetur quia minus voluptatibus optio dignissimos repudiandae natus accusamus asperiores exercitationem
+        suscipit veniam? Velit magnam asperiores corrupti rem reprehenderit eaque maiores consequuntur id numquam
+        aspernatur sed vel dolorum accusamus exercitationem eveniet ad dignissimos, amet a adipisci modi fuga
+        necessitatibus. Cupiditate veniam dolor nesciunt libero eos, rerum labore est, architecto, laudantium quidem sed
+        voluptatibus eius assumenda nulla eveniet eum? Ab, incidunt eum, deleniti et pariatur doloribus veritatis a
+        minus
+        amet asperiores iste fugit culpa rem magnam sed recusandae! Voluptate, quae ad possimus ullam ea nemo iure
+        maiores
+        soluta reprehenderit corporis vitae earum cumque similique cupiditate asperiores consequatur assumenda
+        architecto
+        voluptas fugiat beatae sunt. Assumenda impedit quaerat enim maiores ad facere, debitis a! Iste ea quasi
+        consequatur temporibus dolorem provident quidem vel architecto dolor, voluptates omnis amet odit dicta quos
+        corporis tempora tenetur facere sed. Repudiandae nihil adipisci id. Facere temporibus eligendi inventore, aut
+        id,
+        amet incidunt ullam quae delectus vitae error at quidem? Fuga, rerum adipisci doloribus dolor nam sunt odio
+        ducimus quae dolore harum maiores blanditiis eius eum distinctio nisi deleniti rem inventore iste quaerat iusto!
+        Est corporis veritatis eos itaque soluta suscipit. Modi expedita possimus impedit saepe id quaerat quidem
+        cupiditate ullam maiores sed dolorum blanditiis quae ipsum voluptas, rerum iusto quo porro, dolorem explicabo
+        cum!
+        Odit dolor laudantium amet perspiciatis, similique beatae autem cupiditate, assumenda perferendis earum
+        provident
+        culpa sunt quaerat et eum quis. Ab nesciunt corrupti, iure cum mollitia reprehenderit, natus maiores veritatis
+        quis assumenda ducimus a repellat sunt fuga dolorem aliquid totam dignissimos earum. Autem nesciunt facere,
+        alias
+        debitis nobis quo asperiores quis? Odio est in repellendus illo quasi rerum provident libero assumenda obcaecati
+        nihil veniam laboriosam dicta nobis ducimus eaque, sit deleniti facilis necessitatibus asperiores doloribus?
+        Repudiandae tenetur exercitationem deleniti aliquid.
+      </p>
+    </div>
+    <!--GRID ITEM 4-->
+    <div class="grid-item footer">Footer</div>
+  </div>
+
+</body>
+
+</html>
