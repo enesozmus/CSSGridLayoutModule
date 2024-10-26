@@ -406,13 +406,10 @@
                 ❗️ Default grid yapısında değişikliğe yol açar.
                 ❗️ İlk 5 row için bir müdahaleyi tanımlar.
             grid-template-rows: 100px 100px 100px 100px 100px;
-
-            
-            grid-auto-rows: 2fr; → kalan bütün satırlar
         }
 
 🟪
-🟪 fr unit 🟪
+🟪 fr unit 🟪🟪
 → The fr unit helps create flexible grid tracks. It represents a fraction of the available space in the grid container.
 → The fr is calculated based on the remaining space when combined with other length values.
 → This unit is super clever and flexible as it divides available space into fractions, so 1fr 1fr 1fr 1fr results in four equally sized columns.
@@ -692,6 +689,15 @@
 🟢 Those items are then auto-placed in the implicit grid.
 🟢 The implicit grid can be defined using the 'grid-auto-rows', 'grid-auto-columns', and 'grid-auto-flow' properties.
 
+            🔵 'grid-template-columns' ve 'grid-template-rows' kullandığınızda ne olacağı açıkça sizin tarafınızdan belirlenmiş bir grid container oluşturursunuz. (Explicit Grid)
+
+            1. Ancak belirlenmiş row ve column'lar dışına bir şey yerleştirilmesi gerektiğinde yani herhangi bir gridItem mevcut grid cell'lerinin dışına çıksın dışına taşsın istediğimizde ( grid-column: 1 / 10;)
+
+                                        ya da
+
+            2. Açıkça belirlenmiş row ve column'larda yeterli alan olmadığında ve yeni satırlar oluşmaya başladığında tarayıcı tanımlanmayan alanın dışına çıkırak ilgili gridItem'ların boyutlarına da bakarak otomatik olarak kendince satır ve sütunlar oluşturur. (Implicit Grid lines)
+
+            🔵 Bu default davranışa müdahale etmek istediğinizde bu yeni oluşacak line'ları grid-auto-columns ve grid-auto-rows özellikleriyle boyutlandırabilirsiniz.
 
 🟧
 🟧 grid-auto-rows 🟧 grid-auto-columns 🟧🟧
@@ -699,9 +705,15 @@
         .container {
             display: grid;
 
+                🔵 1
+                grid-column: 1 / 10;
+                grid-row: 1 / 10;       gibi değerlerle gridItem'lara tanımlanan alanlar container bazında ayarlanmış alanı aştığında grid-auto-rows ve grid-auto-columns property'leri kullanışlıdır.
+
+
+                🔵 2
                 ❗️ İki sütunlu bir grid container oluşturuldu.
                 ❗️ İlk row için bir yükseklik değeri atandı. Bu işlemin diğer row'ları ilgilendirmediğini hatırlayın.
-                ❗️ Kalan row'lar için 140px yükseklik değeri atandı.
+                ❗️ GridItem'Lar tek bir row'a sığmadığında ve ikinci üçüncü row'lar oluşmaya başladığında alan row'lar için 140px yükseklik değeri atandı.
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 70px;
             grid-auto-rows: 140px;
