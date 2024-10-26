@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 7</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    * {
+      vertical-align: baseline;
+      font: inherit;
+      text-decoration: none;
+      border: 0 none;
+      outline: 0;
+      padding: 0;
+      margin: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+      scroll-behavior: smooth;
+      height: 100%;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body {
+      font-size: 1.7rem;
+      line-height: 1.5;
+    }
+
+    /* GRID CONTAINER */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 8rem 1fr 15rem;
+      grid-template-areas:
+        'header  header  header  header  header'
+        'sidebar content content content sidebar2'
+        'footer  footer  footer  footer  footer';
+      gap: 1rem;
+    }
+
+    .grid-item {
+      font-size: 150%;
+      color: #fff;
+      background-color: #444;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .header,
+    .footer {
+      color: #000;
+      background-color: #999;
+    }
+
+    .sidebar,
+    .sidebar2 {
+      color: #000;
+      background-color: #ccc;
+    }
+
+    /* just naming */
+    .sidebar {
+      grid-area: sidebar;
+    }
+
+    .sidebar2 {
+      grid-area: sidebar2;
+    }
+
+    .content {
+      grid-area: content;
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .footer {
+      grid-area: footer;
+    }
+
+    /* Redefining Grid Areas with Media Queries */
+    @media only screen and (max-width: 1100px) {
+      .grid-container {
+        grid-template-columns: 15% 1fr 15%;
+        grid-template-areas:
+          'header  header  header'
+          'sidebar content sidebar2'
+          'footer  footer  footer';
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 20% auto;
+        grid-template-areas:
+          'header   header'
+          'sidebar  content'
+          'footer   footer';
+      }
+
+      .sidebar2 {
+        display: none;
+      }
+    }
+
+    @media only screen and (max-width: 490px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+          'header'
+          'content'
+          'footer';
+      }
+
+      .sidebar,
+      .sidebar2 {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--GRID CONTAINER-->
+  <div class="grid-container">
+    <!--GRID ITEM 1-->
+    <div class="grid-item header">Header</div>
+    <!--GRID ITEM 2-->
+    <div class="grid-item sidebar">Sidebar</div>
+    <!--GRID ITEM 3-->
+    <div class="grid-item sidebar2">Sidebar 2</div>
+    <!--GRID ITEM 4-->
+    <div class="grid-item content">Content
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus mollitia assumenda consequuntur labore aut,
+        ipsum non rem nesciunt suscipit sapiente cumque ab et necessitatibus totam dolore at perferendis omnis
+        praesentium! Minima, molestiae, voluptates veniam, officiis consectetur laborum atque veritatis commodi facere
+        amet vero sapiente maxime odio est nemo asperiores assumenda. Ratione labore assumenda totam distinctio nemo cum
+        illo dolorum sunt corporis cupiditate! Unde doloremque facilis sint quis doloribus corporis, provident at?
+        Magnam similique vel, doloribus quasi excepturi quibusdam quis aut ab repellat officia soluta reprehenderit
+        dolor, quaerat laborum sit voluptatibus eum. Iure eos inventore commodi molestias quae quidem dignissimos autem
+        minima a voluptatibus, ipsam officia nulla perspiciatis rem ad quo voluptas eveniet. Aperiam debitis, blanditiis
+        vero ratione, quo amet esse, corrupti sunt placeat fuga quia. Animi soluta harum tempore impedit nam aut
+        adipisci, aliquid iusto corporis maiores laudantium quod repellat dolorem dolor, nobis magni unde veniam neque
+        ratione? Maxime officia iusto explicabo! Eius voluptatum unde, itaque soluta dolore distinctio a accusamus sequi
+        odio molestiae atque. Ducimus in nulla, magni, neque dolorem natus iusto corporis dicta perferendis esse
+        mollitia consequuntur id, magnam fugiat! Fuga quis doloremque sit magni a quos suscipit vero consequatur placeat
+        doloribus. Veritatis, magni natus illum, ipsum dignissimos ratione maxime perferendis sapiente cumque, possimus
+        optio. Molestiae modi rem perferendis molestias laboriosam voluptatibus vel porro, perspiciatis consequuntur
+        est. Rem a aperiam, voluptatem deleniti ipsum eum doloribus asperiores ullam harum dicta rerum labore, sunt
+        porro maiores, architecto eligendi nobis id corrupti? Similique, fugiat sequi. Ratione, inventore eum
+        cupiditate, commodi porro blanditiis iure officiis quaerat molestias itaque neque perferendis? Quidem error
+        ullam optio illo maiores modi eos minus vero sint vitae unde, molestias quis quaerat dolor itaque architecto
+        odit fugit, corrupti corporis dolores perferendis perspiciatis, sequi doloremque repudiandae. Ipsa sequi
+        deserunt accusantium unde! Voluptates autem blanditiis quaerat! Nobis aliquid aperiam dolores.
+      </p>
+    </div>
+    <!--GRID ITEM 5-->
+    <div class="grid-item footer">Footer</div>
+  </div>
+
+</body>
+
+</html>
