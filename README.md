@@ -27,3 +27,5 @@
 ![alt text](https://github.com/enesozmus/CSSGridLayoutModule/blob/main/Exercises/layout-1.png?raw=true)
 
 ![alt text](https://github.com/enesozmus/CSSGridLayoutModule/blob/main/Exercises/layout-2.png?raw=true)
+
+![alt text](https://github.com/enesozmus/CSSGridLayoutModule/blob/main/Exercises/layout-3.png?raw=true)
