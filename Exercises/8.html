@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise 8</title>
+  <style>
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    * {
+      vertical-align: baseline;
+      font: inherit;
+      font-size: 100%;
+      text-decoration: none;
+      border: 0 none;
+      outline: 0;
+      padding: 0;
+      margin: 0;
+    }
+
+    html {
+      font-size: 62.5%;
+      /* ⭕️ windows performance settings ⭕️ */
+      scroll-behavior: smooth;
+      height: 100%;
+
+      -moz-text-size-adjust: none;
+      -webkit-text-size-adjust: none;
+      text-size-adjust: none;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+      font-size: 1.6rem;
+      line-height: 1.5;
+
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeSpeed;
+
+      min-height: 100vh;
+
+      color: #131722;
+      background-color: #f7f8fd;
+      padding: 30px 50px;
+    }
+
+    img,
+    picture,
+    video,
+    canvas {
+      display: block;
+      max-width: 100%;
+    }
+
+    section {
+      width: 100%;
+      max-width: 900px;
+      margin-inline: auto;
+    }
+
+    /* GRID CONTAINER */
+    .grid-container {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .grid-item {
+      position: relative;
+      border-radius: 4px;
+      overflow: hidden;
+      min-height: 300px;
+    }
+
+    .grid-item img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 50%;
+      transition: scale 0.5s;
+    }
+
+    .grid-item:hover img {
+      scale: 1.05;
+    }
+
+    .grid-item h3 {
+      position: relative;
+      font-size: 1.3125rem;
+      font-weight: 500;
+      color: #fff;
+      background: linear-gradient(rgba(0, 0, 0, 0.3) 10%, transparent);
+      padding: 1.5rem;
+      user-select: none;
+    }
+
+    .mosaic-layout-2,
+    .mosaic-layout-3,
+    .mosaic-layout-5 {
+      grid-template-columns: 2fr 1fr;
+    }
+
+    .mosaic-layout-4 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .mosaic-layout-3 .grid-item,
+    .mosaic-layout-4 .grid-item {
+      min-height: 250px;
+    }
+
+    .mosaic-layout-3 .grid-item:nth-child(1) {
+      grid-row: span 2;
+    }
+
+    .mosaic-layout-4 .grid-item:nth-child(1),
+    .mosaic-layout-4 .grid-item:nth-child(4) {
+      grid-column: span 2;
+    }
+
+    .mosaic-layout-5 .grid-item {
+      min-height: 170px;
+    }
+
+    .mosaic-layout-5 .grid-item:nth-child(1),
+    .mosaic-layout-5 .grid-item:nth-child(4) {
+      grid-row: span 3;
+    }
+
+    .mosaic-layout-5 .grid-item:nth-child(2),
+    .mosaic-layout-5 .grid-item:nth-child(3),
+    .mosaic-layout-5 .grid-item:nth-child(5) {
+      grid-row: span 2;
+    }
+
+    @media only screen and (max-width: 540px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <section>
+    <!--GRID CONTAINER-->
+    <div class="grid-container mosaic-layout-5">
+      <!--GRID ITEM 1-->
+      <div class="grid-item">
+        <img src="https://plus.unsplash.com/premium_photo-1683129641904-708b4803689d">
+        <h3>Storage</h3>
+      </div>
+      <!--GRID ITEM 2-->
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1524084848619-1161d3c8501a">
+        <h3>Kitchen</h3>
+      </div>
+      <!--GRID ITEM 3-->
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1516048015710-7a3b4c86be43">
+        <h3>Accessories</h3>
+      </div>
+      <!--GRID ITEM 4-->
+      <div class="grid-item">
+        <img src="https://images.unsplash.com/photo-1558882224-dda166733046">
+        <h3>Living Room</h3>
+      </div>
+      <!--GRID ITEM 5-->
+      <div class="grid-item">
+        <img src="https://plus.unsplash.com/premium_photo-1705582800044-e5b5fd092463">
+        <h3>Lighting</h3>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
