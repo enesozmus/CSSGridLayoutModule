@@ -21,3 +21,9 @@
 
 -   [x] ✅ Aligning Grid Items (Box Alignment)
 -   [x] ✅ Aligning Grid Tracks
+
+## ❤️ What We are Building
+
+![alt text](https://github.com/enesozmus/CSSGridLayoutModule/blob/main/Exercises/layout-1.png?raw=true)
+
+![alt text](https://github.com/enesozmus/CSSGridLayoutModule/blob/main/Exercises/layout-2.png?raw=true)
