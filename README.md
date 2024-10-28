@@ -22,6 +22,9 @@
 -   [x] ✅ Aligning Grid Items (Box Alignment)
 -   [x] ✅ Aligning Grid Tracks
 
+-   [x] ✅ The columns CSS property
+-   [x] ✅ The break-inside CSS property
+
 ## ❤️ What We are Building
 
 ![alt text](https://github.com/enesozmus/CSSGridLayoutModule/blob/main/Exercises/layout-1.png?raw=true)
@@ -31,3 +34,5 @@
 ![alt text](https://github.com/enesozmus/CSSGridLayoutModule/blob/main/Exercises/layout-3.png?raw=true)
 
 ![alt text](https://github.com/enesozmus/CSSGridLayoutModule/blob/main/Exercises/layout-4.png?raw=true)
+
+![alt text](https://github.com/enesozmus/CSSGridLayoutModule/blob/main/Exercises/layout-5.png?raw=true)
