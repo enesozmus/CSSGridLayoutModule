@@ -6,24 +6,24 @@
 
 ## ⏳ Process
 
--   [x] ✅ Grid Container
--   [x] ✅ Explicit Grid
--   [x] ✅ Minimum and Maxmum Grid Track Sizes
--   [x] ✅ Repeating Grid Tracks
--   [x] ✅ Grid Gaps and Layering Grid Items
--   [x] ✅ Positioning Items by Grid Line Numbers
--   [x] ✅ Spanning Items Across Rows and Columns
--   [x] ✅ Naming Grid Lines
--   [x] ✅ Positioning Items by Line Names
--   [x] ✅ Naming and Positioning Items by Lines with the Same Name
--   [x] ✅ Naming and Positioning Items by Grid Areas
--   [x] ✅ Implicit Grid
+> -   ✅ Grid Container
+> -   ✅ Explicit Grid
+> -   ✅ Minimum and Maxmum Grid Track Sizes
+> -   ✅ Repeating Grid Tracks
+> -   ✅ Grid Gaps and Layering Grid Items
+> -   ✅ Positioning Items by Grid Line Numbers
+> -   ✅ Spanning Items Across Rows and Columns
+> -   ✅ Naming Grid Lines
+> -   ✅ Positioning Items by Line Names
+> -   ✅ Naming and Positioning Items by Lines with the Same Name
+> -   ✅ Naming and Positioning Items by Grid Areas
+> -   ✅ Implicit Grid
 
--   [x] ✅ Aligning Grid Items (Box Alignment)
--   [x] ✅ Aligning Grid Tracks
+> -   ✅ Aligning Grid Items (Box Alignment)
+> -   ✅ Aligning Grid Tracks
 
--   [x] ✅ The columns CSS property
--   [x] ✅ The break-inside CSS property
+> -   ✅ The columns CSS property
+> -   ✅ The break-inside CSS property
 
 ## ❤️ What We are Building
 
